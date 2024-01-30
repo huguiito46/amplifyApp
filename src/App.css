@@ -1,38 +1,44 @@
+/* Estilos generales para la aplicación */
 .App {
-  text-align: center;
+  text-align: center; /* Centra el texto de todos los elementos dentro de la clase .App */
 }
 
+/* Estilos para el logo de la aplicación */
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 40vmin; /* Establece la altura del logo al 40% del menor entre el ancho y el alto de la ventana de visualización */
+  pointer-events: none; /* Desactiva los eventos del puntero (como clics) en el logo */
 }
 
+/* Aplica una animación al logo si el usuario no tiene preferencias de reducción de movimiento */
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 20s linear; /* Infinita animación de rotación del logo con una duración de 20 segundos y movimiento lineal */
   }
 }
 
+/* Estilos para el encabezado de la aplicación */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #282c34; /* Color de fondo del encabezado */
+  min-height: 100vh; /* Altura mínima del encabezado igual a la altura de la ventana de visualización */
+  display: flex; /* Usa Flexbox para la disposición de los elementos */
+  flex-direction: column; /* Los elementos se disponen en una columna */
+  align-items: center; /* Centra los elementos horizontalmente en el contenedor Flex */
+  justify-content: center; /* Centra los elementos verticalmente en el contenedor Flex */
+  font-size: calc(10px + 2vmin); /* Tamaño de fuente adaptable basado en el tamaño de la ventana */
+  color: white; /* Color de texto para el encabezado */
 }
 
+/* Estilos para los enlaces dentro de la aplicación */
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* Color de los enlaces */
 }
 
+/* Keyframes para la animación de rotación del logo */
 @keyframes App-logo-spin {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Inicio de la animación: rotación a 0 grados */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Fin de la animación: rotación a 360 grados */
   }
 }
